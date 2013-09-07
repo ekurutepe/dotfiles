@@ -1,4 +1,62 @@
+" Necesary for lots of cool vim things
+set nocompatible
+
+" Syntax highlighting
 syntax on
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
+
+" show auto complete menus.
+set wildmenu
+
+" Make wildmenu behave like bash completion. Finding commands are so easy now.
+set wildmode=list:longest
+
+" number the lines.
+set number
+
+" highlight matching brackets
+set showmatch
+
+" turn on autoindent
+set autoindent
+
+" get rid of ~file
+set nobackup
+
+" turn off swap files
+set noswapfile
+
+" lines, cols in status line
+set ruler
+set rulerformat=%=%h%m%r%w\ %(%c%V%),%l/%L\ %P
+
+" current mode in status line
+set showmode
+
+" indicate when a line is wrapped by prefixing wrapped line with '> '
+set showbreak=>\ 
+
+" highlight search matches
+set hlsearch
+
+" use spaces, not tabs
+set shiftwidth=4
+set tabstop=4
+
+" Auto expand tabs to spaces
+set expandtab
+
+" case insensitive search if all lowercase
+set ignorecase smartcase
+
+" turn off arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
