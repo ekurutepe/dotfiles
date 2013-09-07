@@ -77,3 +77,10 @@ open "$ZSH/terminal/SolarizedDark.terminal"
 sleep 1 # Wait a bit to make sure the theme is loaded
 defaults write com.apple.terminal "Default Window Settings" -string "SolarizedDark"
 defaults write com.apple.terminal "Startup Window Settings" -string "SolarizedDark"
+
+###############################################################################
+# GPGMail 2                                                                   #
+###############################################################################
+
+# Disable signing emails by default
+defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault -bool false
