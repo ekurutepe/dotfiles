@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# Open XCode with first workspace or project found in current directory
+# (probably doesn't work if file has > 1 workspace or > 1 directory)
+#
+
+workspace=`ls | grep *.xcworkspace`
+project=`ls | grep *.xcodeproj`
+
+if [[ $workspace ]]; then
+	open $workspace
+elif [[ $project ]]; then
+	open $project
+fi
