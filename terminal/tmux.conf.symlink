@@ -15,12 +15,35 @@ set -g prefix C-b
 unbind r
 bind r source-file ~/.tmux.conf
 
-# quick pane cycling
-unbind ^b
-bind ^b select-pane -t :.+
-
 # Easier to remember splitting commands
 unbind %
-unbind "
 bind | split-window -h
 bind - split-window -v
+
+# Highlight active window
+set-window-option -g window-status-current-bg red
+
+# Set status bar
+set -g status-bg black
+set -g status-fg white
+# left
+set -g status-left-fg white
+set -g status-left-bg blue
+set -g status-left '#H:#S'
+# right
+set -g status-right-fg white
+set -g status-right-bg blue
+set -g status-right '%a %b %d, %Y %H:%M'
+
+# Set window notifications
+setw -g monitor-activity on
+set -g visual-activity on
+
+# use the vim motion keys to move between panes
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# use vim motion keys while in copy mode
+setw -g mode-keys vi
