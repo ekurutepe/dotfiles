@@ -73,8 +73,8 @@ defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.Web
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Use the Solarized Light theme by default in Terminal.app
-open "$ZSH/terminal/SolarizedDark.terminal"
-sleep 1 # Wait a bit to make sure the theme is loaded
+# open "$ZSH/terminal/SolarizedDark.terminal"
+# sleep 1 # Wait a bit to make sure the theme is loaded
 defaults write com.apple.terminal "Default Window Settings" -string "SolarizedDark"
 defaults write com.apple.terminal "Startup Window Settings" -string "SolarizedDark"
 
