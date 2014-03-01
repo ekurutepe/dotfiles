@@ -20,6 +20,9 @@ unbind %
 bind | split-window -h
 bind - split-window -v
 
+# Don't rename windows
+set-option -g allow-rename OFF
+
 # Highlight active window
 set-window-option -g window-status-current-bg red
 
