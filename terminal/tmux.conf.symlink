@@ -18,3 +18,9 @@ bind r source-file ~/.tmux.conf
 # quick pane cycling
 unbind ^b
 bind ^b select-pane -t :.+
+
+# Easier to remember splitting commands
+unbind %
+unbind "
+bind | split-window -h
+bind - split-window -v
