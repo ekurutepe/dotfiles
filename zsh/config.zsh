@@ -24,7 +24,6 @@ setopt HIST_VERIFY
 setopt SHARE_HISTORY # share history between sessions ???
 setopt EXTENDED_HISTORY # add timestamps to history
 setopt PROMPT_SUBST
-setopt CORRECT
 setopt COMPLETE_IN_WORD
 setopt IGNORE_EOF
 
@@ -36,6 +35,10 @@ setopt HIST_REDUCE_BLANKS
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
 setopt complete_aliases
+
+# Don't autocorrent
+unsetopt correct_all
+unsetopt correct
 
 zle -N newtab
 
