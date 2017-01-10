@@ -45,6 +45,9 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
+# Always show expanded save dialog
+defaults write -g NSNavPanelExpandedStateForSaveMode -boolean true
+
 
 ###############################################################################
 # Mail                                                                        #
@@ -80,3 +83,21 @@ defaults write com.apple.terminal "Startup Window Settings" -string "SolarizedDa
 
 # Disable signing emails by default
 defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault -bool false
+
+###############################################################################
+# Photos                                                                      #
+###############################################################################
+
+# Don't open Photos.app automatically when device is plugged in
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
+
+###############################################################################
+# Xcode                                                                      #
+# http://merowing.info/2015/12/little-things-that-can-make-your-life-easier-in-2016/
+###############################################################################
+
+# Show build times
+defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
+
+# Leverage multi-core CPU for faster build times
+defaults write com.apple.dt.Xcode IDEBuildOperationMaxNumberOfConcurrentCompileTasks `sysctl -n hw.ncpu`
