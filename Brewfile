@@ -13,6 +13,7 @@ brew 'rbenv'
 
 brew 'spark'
 
+brew 'ack'
 brew 'trash'
 brew 'tree'
 
