@@ -101,3 +101,9 @@ defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
 
 # Leverage multi-core CPU for faster build times
 defaults write com.apple.dt.Xcode IDEBuildOperationMaxNumberOfConcurrentCompileTasks `sysctl -n hw.ncpu`
+
+# Preferences
+defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines 1
+defaults write com.apple.dt.Xcode DVTTextShowFoldingSidebar 1
+defaults write com.apple.dt.Xcode DVTTextShowLineNumbers 1
+defaults write com.apple.dt.Xcode XCFontAndColorCurrentTheme "Dusk.xccolortheme"
