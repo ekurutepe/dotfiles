@@ -6,9 +6,10 @@
 
 workspace=`ls | grep *.xcworkspace`
 project=`ls | grep *.xcodeproj`
+xcode=`xcode-select -p | sed 's/\(.*\.app\).*/\1/'`
 
 if [[ $workspace ]]; then
-	open $workspace
+	open -a "$xcode" "$workspace"
 elif [[ $project ]]; then
-	open $project
+	open -a "$xcode" "$project"
 fi
