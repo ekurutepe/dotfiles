@@ -3,3 +3,8 @@
 *.swp
 
 .idea/
+
+# Xcode
+xcuserdata
+*.xccheckout
+*.xcscmblueprint
