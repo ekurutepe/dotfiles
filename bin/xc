@@ -1,15 +1,7 @@
 #!/bin/sh
 #
-# Open XCode with first workspace or project found in current directory
-# (probably doesn't work if file has > 1 workspace or > 1 directory)
+# Open Xcode with the workspace or project found in current directory
 #
 
-workspace=`ls | grep *.xcworkspace`
-project=`ls | grep *.xcodeproj`
 xcode=`xcode-select -p | sed 's/\(.*\.app\).*/\1/'`
-
-if [[ $workspace ]]; then
-	open -a "$xcode" "$workspace"
-elif [[ $project ]]; then
-	open -a "$xcode" "$project"
-fi
+open -a "$xcode" .
