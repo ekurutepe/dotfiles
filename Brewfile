@@ -18,3 +18,5 @@ brew 'trash'
 brew 'tree'
 
 brew 'hub'
+
+brew 'chisel'
