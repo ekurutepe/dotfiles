@@ -1,5 +1,16 @@
 {
-  "font_size": 13.0,
-  "theme": "Soda Dark.sublime-theme",
-  "ensure_newline_at_eof_on_save": true
+	"bold_folder_labels": true,
+	"draw_minimap_border": true,
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 15.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"spell_check": true,
+	"theme": "Soda Dark.sublime-theme",
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
 }

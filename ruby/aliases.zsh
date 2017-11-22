@@ -1,3 +1,2 @@
-alias sc='script/console'
-alias sg='script/generate'
-alias sd='script/destroy'
+alias s='script/rails s'
+alias c='script/rails c'
