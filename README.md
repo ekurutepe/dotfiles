@@ -3,7 +3,7 @@
 Run this:
 
 ```sh
-git clone https://github.com/estromlund/dotfiles.git ~/.dotfiles
+git clone https://github.com/ekurutepe/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 script/bootstrap
 ```
