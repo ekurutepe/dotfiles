@@ -21,7 +21,7 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 ###############################################################################
 
 # Always open everything in Finder's list view. This is important.
-defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+# defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
 # Show the ~/Library folder.
 chflags nohidden ~/Library
@@ -34,7 +34,7 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
-defaults write com.apple.finder QuitMenuItem -bool true
+# defaults write com.apple.finder QuitMenuItem -bool true
 
 # Finder: show path bar
 defaults write com.apple.finder ShowPathbar -bool true
@@ -54,15 +54,15 @@ defaults write -g NSNavPanelExpandedStateForSaveMode -boolean true
 ###############################################################################
 
 # Disable send and reply animations in Mail.app
-defaults write com.apple.mail DisableReplyAnimations -bool true
-defaults write com.apple.mail DisableSendAnimations -bool true
+# defaults write com.apple.mail DisableReplyAnimations -bool true
+# defaults write com.apple.mail DisableSendAnimations -bool true
 
 ###############################################################################
 # Safari                                                                      #
 ###############################################################################
 
 # Hide Safari's bookmark bar.
-defaults write com.apple.Safari ShowFavoritesBar -bool false
+# defaults write com.apple.Safari ShowFavoritesBar -bool false
 
 # Set up Safari for development.
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
@@ -74,15 +74,15 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 # Use the Solarized Light theme by default in Terminal.app
 # open "$ZSH/terminal/SolarizedDark.terminal"
 # sleep 1 # Wait a bit to make sure the theme is loaded
-defaults write com.apple.terminal "Default Window Settings" -string "SolarizedDark"
-defaults write com.apple.terminal "Startup Window Settings" -string "SolarizedDark"
+# defaults write com.apple.terminal "Default Window Settings" -string "SolarizedDark"
+# defaults write com.apple.terminal "Startup Window Settings" -string "SolarizedDark"
 
 ###############################################################################
 # GPGMail 2                                                                   #
 ###############################################################################
 
 # Disable signing emails by default
-defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault -bool false
+# defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault -bool false
 
 ###############################################################################
 # Photos                                                                      #
@@ -100,10 +100,10 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
 defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
 
 # Leverage multi-core CPU for faster build times
-defaults write com.apple.dt.Xcode IDEBuildOperationMaxNumberOfConcurrentCompileTasks `sysctl -n hw.ncpu`
+# defaults write com.apple.dt.Xcode IDEBuildOperationMaxNumberOfConcurrentCompileTasks `sysctl -n hw.ncpu`
 
 # Preferences
 defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines 1
 defaults write com.apple.dt.Xcode DVTTextShowFoldingSidebar 1
 defaults write com.apple.dt.Xcode DVTTextShowLineNumbers 1
-defaults write com.apple.dt.Xcode XCFontAndColorCurrentTheme "Dusk.xccolortheme"
+# defaults write com.apple.dt.Xcode XCFontAndColorCurrentTheme "Dusk.xccolortheme"
